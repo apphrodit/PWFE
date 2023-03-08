@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner{
+    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/be/60/2d/osasco.jpg?w=700&h=500&s=1');
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+p{
+    color:lawngreen;
+    font-weight: bold;
+    font-size: 1.5rem;
+}

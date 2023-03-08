@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I M P E R I U M </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Lanches</h1>
+    <div>
+        <input type="text" placeholder="Nome Do Cliente" id="cliente">
+        <input type="text" placeholder="Endereço Do Cliente" id="endereco">
+        <select id="lanches">     
+            <option value="X-Tudo">X-Tudo</option>
+            <option value="X-Salada">X-Salada</option>
+            <option value="X-Bacon">X-Bacon</option>
+        </select>
+        <input type="number" id="qntd">
+        <button onclick="cadastrar()">Cadastrar</button>
+    </div>
+    <div class="listas">
+        <div class="lista" id="cozinha">
+            <h2>Cozinha</h2>
+            <div class="card model">
+                <div class="card-body">
+                    <p id="infoCliente">Fulano Rua Sem Saída</p>
+                    <p id="infoPedido">X-Bacon</p>
+                    <p id="hora">20/10/2023</p>
+                </div>
+                <button>Enviar</button>
+                <button id="add" >Adicionar Mais Itens Ao Pedido</button>
+                <button id="remove">Cancelar Pedido</button>
+
+            </div>
+        </div>
+        <div class="lista" id="entrega">
+            <h2>Entregas</h2>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

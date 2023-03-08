@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 90vw;
+    height: 20vh;
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color:beige ;
+}
+
+hr{
+    border: 1px solid rgba(0, 0, 0, 0.911);
+}
+.vl{
+    border-left: 3px solid rgba(0, 0, 0, 0.911);
+    height: 500px;
+    position: absolute;
+    left:50%;
+    margin-left: -3px;
+    top: 20;    
+}
+
+h2{
+    display: flex;
+    flex-direction: row;
+    color: green;
+}
+section{
+    width:200px;
+}
+div{
+    display: flex;
+    flex-direction: row;
+}
+

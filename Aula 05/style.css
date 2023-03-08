@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table,th,td{
+    width: 500px;
+    height: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    font-weight: 400;
+    align-items: center;
+}
+
+th{
+    align-items: center;
+}
+
+td{
+    align-items: center;
+}

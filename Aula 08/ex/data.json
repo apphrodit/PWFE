@@ -1,0 +1,28 @@
+[
+    {
+        "nome" : "Alberto Adalberto",
+        "matricula" : 132455,
+        "senha" : "abc123",
+        "salario" : 2570.80,
+        "responsavel" : [
+            {
+                "cod": "ca123",
+                "endereco": "Rua Das Ruas, 43",
+                "valor" : 455000
+            }
+        ]
+    },
+    {
+        "nome" : "Berto Humberto",
+        "matricula" : 132455,
+        "senha" : "abc123",
+        "salario" : 2570.80,
+        "responsavel" : [
+            {
+                "cod": "ca123",
+                "endereco": "Rua Das Ruas, 43",
+                "valor" : 455000
+            }
+        ]
+    }
+]

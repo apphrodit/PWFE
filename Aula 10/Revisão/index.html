@@ -5,22 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="shortcut icon" href="./assets/sun.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/global.css">
-    <title>Previsão do Tempo</title>
+    
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="api.js"></script>
+   
+    <title>Previsão do Tempo</title>
+   
 </head>
 
 <body>
     <header>
-        <p>
+        <p id="pintou">
             Pintou o Clima !
         </p>
         <div>
             <input type="text" name="pesquisar" id="pesquisar" placeholder="Busque por uma cidade...">
-            <!-- <img src="./assets/lupa.png" alt=""> -->
-        </div>
+            <button onclick="buscar()">Buscar</button>
+            <p id="res"></p>
     </header>
 </body>
 <main>

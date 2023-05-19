@@ -28,11 +28,11 @@ header{
     height: 45px;
     padding: 16px;
     border-radius: 5px;
+    margin-top: 50px;
     background-color: powderblue;
-    color: white;
 }
 
-p{
+#pintou{
     font-family:'Rubik', sans-serif;
     color: white;
     font-weight: 500;
@@ -43,5 +43,5 @@ main{
     width: 1050px;
     height: 750px;
     margin-left: 450px;
-    background-color: red;
+    /* background-color: red; */
 }

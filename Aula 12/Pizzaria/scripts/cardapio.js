@@ -261,7 +261,7 @@ function preencherTabela() {
        const detalhes = document.createElement("td");
        id.innerHTML = e.id;
        nome.innerHTML = e.nome;
-       detalhes.innerHTML = `<button onclick="abrirModal('${i}')">Detalhes</button>`;
+       detalhes.innerHTML = `<button id="btndetails" onclick="abrirModal('${i}')">DETALHES</button>`;
        linha.appendChild(id);
        linha.appendChild(nome);
        linha.appendChild(detalhes);
@@ -275,7 +275,7 @@ function abrirModal(i){
    document.querySelector("#nome").value = dados[i].nome;
 }
 
-function cadastarLocal(){
+function cadastrarLocal(){
    const item = {
        id : document.querySelector("#id").value,
        nome: document.querySelector("#nome").value

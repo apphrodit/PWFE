@@ -8,20 +8,21 @@
     <link rel="shortcut icon" href="../assets/pizza.png" type="image/x-icon">
     <link rel="stylesheet" href="../Styles/global.css">
     <link rel="stylesheet" href="../Styles/cardapio.css">
-    <title>Cluberonnni | Cardápio</title>
+    <title>Cluberonnni</title>
 </head>
 
 <body onload="preencherTabela()">
     <header>
-
+        <h1>Cluberonnni | Cardápio</h1>
+        <img id="forno"src="../assets/forno-de-pizza.png" alt="Forno De Pizza">
     </header>
     <main>
         <table>
             <thead>
                 <tr>
-                    <th>id</th>
-                    <th>nome</th>
-                    <th>detalhes</th>
+                    <th>ID</th>
+                    <th>NOME</th>
+                    <th>DETALHES</th>
                 </tr>
             </thead>
             <tbody id="tcorpo">
@@ -33,11 +34,11 @@
     </footer>
     <div id="detalhes" class="modal oculto">
         <div class="corpoModal">
-            <h1>Detalhes</h1>
+            <h1>DETALHES</h1>
             <button id="btFechar">Fechar</button>
             <input type="text" id="id">
-            <input type="text" id="nome">
-            <button id="btCadastrar" onclick="cadastrarLocal()">Cadastrar</button>
+            <input type="text" id="nome">   
+            <button id="btCadastrar" onclick="cadastrarLocal()">Add. Ao Carrinho</button>
         </div>
     </div>
 </body>

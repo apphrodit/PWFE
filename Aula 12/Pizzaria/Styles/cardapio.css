@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -8,14 +9,25 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #1C5C34;
 }
 header{
+    font-family: 'Italianno', cursive;
     width: 100%;
     height: 10vh;
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid #000;
+}
+#forno{
+    width: 40px;
+    height:40px;
+}
+h1{
+    font-size:3rem;
+    color: #FF0000;
 }
 main{
     width: 100%;
@@ -60,4 +72,38 @@ footer{
 
 .oculto{
     display: none;
+}
+
+table th,
+table td {  
+    /* padding-right: 50px;  */
+    border: none
+} 
+
+th{
+    padding-left: 150PX;
+    height: 4vh;
+    border-bottom: 1px  solid #000;
+    font-size: 2rem;
+
+}
+
+td{ 
+    padding-left:330px;
+    font-size: 1.5rem;
+    height:50px;
+}
+
+table{
+    background-color: #FCEC9F;
+    width: 100%;
+}
+
+#btndetails {
+    width: 150px;
+    height: 45px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ccb42c;
+    font-weight: 850;
 }

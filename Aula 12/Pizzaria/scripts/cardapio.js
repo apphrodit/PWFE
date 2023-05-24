@@ -271,23 +271,24 @@ function preencherTabela() {
 
 function abrirModal(i){
    detalhes.classList.toggle("oculto");
-   document.querySelector("#id").value = dados[i].id;
-   document.querySelector("#nome").value = dados[i].nome;
+   document.querySelector("#id").innerHTML = dados[i].id;
+   document.querySelector("#nome").innerHTML = dados[i].nome;
+   document.querySelector("#descricao").innerHTML = dados[i].descricao;
+   document.querySelector("#preco").innerHTML = dados[i].preco;
 }
 
 function cadastrarLocal(){
    const item = {
-       id : document.querySelector("#id").value,
-       nome: document.querySelector("#nome").value
+       id : document.querySelector("#id").innerHTML,
+       nome: document.querySelector("#nome").innerHTML,
+       descricao: document.querySelector("#descricao").innerHTML,
+       preco: document.querySelector("#preco").innerHTML
    }
 
-   //Abrir ou iniciar a lista de produtos
-   const produtos = JSON.parse(window.localStorage.getItem("produtos")) || []
-   //Acrescentar o novo item na lista
-   produtos.push(item)
-   //Salvar a lista no armazenamento local
-   window.localStorage.setItem("produtos",JSON.stringify(produtos))
    
-   //Recarregar a página
+   const produtos = JSON.parse(window.localStorage.getItem("produtos")) || []
+   produtos.push(item)
+   window.localStorage.setItem("produtos",JSON.stringify(produtos))
+   window.location.href= "../pages/carrinho.html"
    window.location.reload()
 }

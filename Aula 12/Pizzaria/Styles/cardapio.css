@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -27,7 +28,8 @@ header{
 }
 h1{
     font-size:3rem;
-    color: #FF0000;
+    color: #e54616;
+    font-family: 'Italianno', cursive; 
 }
 main{
     width: 100%;
@@ -90,13 +92,14 @@ th{
 
 td{ 
     padding-left:330px;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     height:50px;
 }
 
 table{
     background-color: #FCEC9F;
     width: 100%;
+    font-family: 'Italianno', cursive; 
 }
 
 #btndetails {
@@ -106,4 +109,68 @@ table{
     border: none;
     background-color: #ccb42c;
     font-weight: 850;
+    outline:none;
+}
+
+#btndetails:hover{
+    height: 50px;
+    background-color: #febb00;  
+}
+
+.corpoModal{
+    width: 65%;
+    background-color: #dba053;
+    border: none;
+    border-radius: 10px;
+    gap: 120px
+}
+
+.conteudoModal{
+    gap:30px
+}
+
+#id{
+    height: 40px;
+    width: 40px;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+#nome{
+    width:225px;
+    height: 40px;
+    border:none;
+    outline: none;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+#btFechar{
+    width: 90px;
+    height: 35px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    background-color: #f8e483;
+    border-radius: 3px;
+}
+
+#btCadastrar{
+    width: 120px;
+    height: 35px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    background-color: #f8e483;
+    border-radius: 3px;
+}
+
+p{
+    color: white;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 800;
 }

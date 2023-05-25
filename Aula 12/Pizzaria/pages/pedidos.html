@@ -8,7 +8,24 @@
     <link rel="stylesheet" href="../Styles/global.css">
     <title>Cluberonnni | Pedidos</title>
 </head>
-<body>
-    
+<body onload="preencherCard()">
+    <header>
+        <h1>Cluberonnni | Carrinho</h1>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tcorpo">
+            </tbody>
+        </table>
+        <button onclick="limparDados()">Limpar Pedidos </button>
+    </main>
 </body>
+<script src="../scripts/pedidos.js"></script>
 </html>

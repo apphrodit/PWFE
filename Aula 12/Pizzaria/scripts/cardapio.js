@@ -253,6 +253,10 @@ const dados = [
  btFechar.addEventListener('click', () =>{
       detalhes.classList.toggle("oculto");
  })
+
+ function proxPag(){
+   window.location.href = "carrinho.html";
+ }
 function preencherTabela() {
    dados.forEach((e, i) => {
        const linha = document.createElement("tr");
@@ -271,10 +275,10 @@ function preencherTabela() {
 
 function abrirModal(i){
    detalhes.classList.toggle("oculto");
-   document.querySelector("#id").innerHTML = dados[i].id;
-   document.querySelector("#nome").innerHTML = dados[i].nome;
-   document.querySelector("#descricao").innerHTML = dados[i].descricao;
-   document.querySelector("#preco").innerHTML = dados[i].preco;
+   document.querySelector("#id").innerHTML = `ID: ${dados[i].id}`;
+   document.querySelector("#nome").innerHTML = `Sabor: ${dados[i].nome}`;
+   document.querySelector("#descricao").innerHTML = `Ingredientes: ${dados[i].descricao}`;
+   document.querySelector("#preco").innerHTML = `preco: ${dados[i].preco}`;
 }
 
 function cadastrarLocal(){
@@ -285,7 +289,6 @@ function cadastrarLocal(){
        preco: document.querySelector("#preco").innerHTML
    }
 
-   
    const produtos = JSON.parse(window.localStorage.getItem("produtos")) || []
    produtos.push(item)
    window.localStorage.setItem("produtos",JSON.stringify(produtos))

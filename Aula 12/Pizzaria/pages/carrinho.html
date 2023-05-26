@@ -12,14 +12,16 @@
 <body onload="preencherTabela()">
     <header>
         <h1>Cluberonnni | Carrinho</h1>
+        <button onclick="proxPag()">Ver Pedidos</button>
     </header>
     <main>
         <table>
             <thead>
                 <tr>
                     <th>id</th>
-                    <th>nome</th>
-                    <th>detalhes</th>
+                    <th>Sabor</th>
+                    <th>Preço</th>
+                    <th>Situação do Pedido</th>
                 </tr>
             </thead>
             <tbody id="tcorpo">
@@ -28,8 +30,8 @@
     </main>
     <footer>
         <button onclick="limparDados()">Limpar Dados</button>
-        <button onclick="enviar()">enviar pedido</button>
-
+        <button onclick="enviar()">Enviar Pedidos</button>
+        <p id="precoTotal"></p>
     </footer>
     <div id="detalhes" class="modal oculto">
         <div class="corpoModal">

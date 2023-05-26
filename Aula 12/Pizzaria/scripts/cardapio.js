@@ -275,12 +275,11 @@ function preencherTabela() {
 
 function abrirModal(i){
    detalhes.classList.toggle("oculto");
-   document.querySelector("#id").innerHTML = `ID: ${dados[i].id}`;
-   document.querySelector("#nome").innerHTML = `Sabor: ${dados[i].nome}`;
-   document.querySelector("#descricao").innerHTML = `Ingredientes: ${dados[i].descricao}`;
-   document.querySelector("#preco").innerHTML = `preco: ${dados[i].preco}`;
+   document.querySelector("#id").innerHTML = dados[i].id;
+   document.querySelector("#nome").innerHTML = dados[i].nome;
+   document.querySelector("#descricao").innerHTML = dados[i].descricao;
+   document.querySelector("#preco").innerHTML = dados[i].preco;
 }
-
 function cadastrarLocal(){
    const item = {
        id : document.querySelector("#id").innerHTML,

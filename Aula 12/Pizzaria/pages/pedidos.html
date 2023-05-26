@@ -6,26 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Styles/pedidos.css">
     <link rel="stylesheet" href="../Styles/global.css">
-    <title>Cluberonnni | Pedidos</title>
+    <title>Pizzaria Cluberonnni</title>
 </head>
-<body onload="preencherCard()">
+<body onload="preencherTabela()">
     <header>
-        <h1>Cluberonnni | Carrinho</h1>
+        <h1>Cluberonnni | Pedidos</h1>
     </header>
     <main>
         <table>
             <thead>
                 <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
+                    <th>Pedido</th>
+                    <th>ID</th>
+                    <th>Data</th>
+                    <th>Sabor</th>
+                    <th>Preço</th>
+                    <th>Status</th>
                 </tr>
             </thead>
             <tbody id="tcorpo">
             </tbody>
         </table>
-        <button onclick="limparDados()">Limpar Pedidos </button>
+        
     </main>
+    <footer>
+        <button onclick="limparDados()">Cancelar Pedido</button>
+    </footer>
 </body>
 <script src="../scripts/pedidos.js"></script>
 </html>
